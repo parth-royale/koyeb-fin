@@ -196,7 +196,7 @@ def main():
     threading.Thread(target=ws_client_connect, daemon=True).start()
     threading.Thread(target=check_and_flush_deque, daemon=True).start()
 
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
 
 
 if __name__ == "__main__":
